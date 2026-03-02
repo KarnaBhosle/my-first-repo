@@ -1,1 +1,1 @@
-Hello, I am Karna. I am learning GitHub.
+Hello Worldcd my-first-repo!
