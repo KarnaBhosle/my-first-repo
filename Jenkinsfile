@@ -1,25 +1,22 @@
 pipeline{
   agent any
-
   stages{
     stage('Checkout'){
       steps{
-            git 'https://github.com/KarnaBhosle/my-first-repo'
+      git 'https://github.com/prajwalb-mini/javarepo.git'
     }
-    }
+  }
     stage('Publish'){
       steps{
-        publishHTML([
+        publisgHTML([
           allowmissing:true,
-          alwaysLinktoLastBuild:false,
+          alwaysLinkedtoLastBuild:false,
           KeepAll:false,
           reportDir:'.',
-          reportFiles:'index.html',
-          reportName:"MY HTML PAGE'
-          ])
+          reportFiles:'Index.html',
+          reportName:'MY HTML PAGE'
+        ])
       }
     }
-          
-      
-
-  }
+}
+}
